@@ -26,14 +26,4 @@ class MyModel(Base):
 
 Index('my_index', MyModel.name, unique=True, mysql_length=255)
 
-class ObjectModel(Base):
-    __tablename__ = 'foos'
-    id = Column(Integer, primary_key=True)
-    weight = Column(Integer)
-    height = Column(Integer)
-    volume = Column(Integer)
-
-Index('object_index', ObjectModel.name, unique=True, mysql_length=255)
-
-
 
